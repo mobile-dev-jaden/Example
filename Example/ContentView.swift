@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    private var dates = [
+        "2022-05-31",
+        "2022-06-01",
+        "2022-06-02",
+        "2022-06-03",
+    ]
+    
     var body: some View {
         VStack {
-            CalendarView()
+            CalendarView(dates, mode: .basicCalendarMode)
         }
     }
 }
