@@ -93,13 +93,13 @@ extension CalendarView.BackBlockedCoordinator {
             
             return localDate
         }
-        return Date()
+        return date
     }
 }
 
 // 오늘 이후의 날짜는 조작할 수 없는 달력
 extension CalendarView.ForwardBlockedCoordinator {
-    func maximun(for calendar: FSCalendar) -> Date {
+    func maximumDate(for calendar: FSCalendar) -> Date {
         var date: Date {
             let nowUTC = Date()
             let timeZoneOffset = TimeZone.current.secondsFromGMT() / -60
@@ -111,6 +111,6 @@ extension CalendarView.ForwardBlockedCoordinator {
             
             return localDate
         }
-        return Date()
+        return date
     }
 }
