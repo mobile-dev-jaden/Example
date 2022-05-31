@@ -21,14 +21,17 @@ struct ContentView: View {
             HStack {
                 NavigationLink("Forward Blocked Mode") {
                     CalendarView(dates, mode: .forwardBlockedMode)
+                        .navigationTitle("Forward Blocked Mode")
                 }
                 
                 NavigationLink("Plain Mode") {
                     CalendarView(dates, mode: .basicCalendarMode)
+                        .navigationTitle("Plain Mode")
                 }
                 
                 NavigationLink("Backward Blocked Mode") {
                     CalendarView(dates, mode: .backBlockedMode)
+                        .navigationTitle("Backword Blocked Mode")
                 }
             }
         }
