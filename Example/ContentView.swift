@@ -17,8 +17,20 @@ struct ContentView: View {
     ]
     
     var body: some View {
-        VStack {
-            CalendarView(dates, mode: .basicCalendarMode)
+        NavigationView {
+            HStack {
+                NavigationLink("Forward Blocked Mode") {
+                    CalendarView(dates, mode: .forwardBlockedMode)
+                }
+                
+                NavigationLink("Plain Mode") {
+                    CalendarView(dates, mode: .basicCalendarMode)
+                }
+                
+                NavigationLink("Backward Blocked Mode") {
+                    CalendarView(dates, mode: .backBlockedMode)
+                }
+            }
         }
     }
 }
