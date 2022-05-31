@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A18E00D2284386BF0070FB66 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E00D1284386BF0070FB66 /* CalendarView.swift */; };
 		A1ADD62D284324A60039B697 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADD62C284324A60039B697 /* ExampleApp.swift */; };
 		A1ADD62F284324A60039B697 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADD62E284324A60039B697 /* ContentView.swift */; };
 		A1ADD631284324A80039B697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1ADD630284324A80039B697 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 		0077811D397593452A1B1AC4 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3048CE0AB4DB92F5B83E562D /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BBD55FA7C35D48739EE72D4 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		A18E00D1284386BF0070FB66 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		A1ADD629284324A60039B697 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1ADD62C284324A60039B697 /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
 		A1ADD62E284324A60039B697 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +48,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A18E00D0284386B00070FB66 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A18E00D1284386BF0070FB66 /* CalendarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A1ADD620284324A60039B697 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +77,7 @@
 		A1ADD62B284324A60039B697 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				A18E00D0284386B00070FB66 /* View */,
 				A1ADD62C284324A60039B697 /* ExampleApp.swift */,
 				A1ADD62E284324A60039B697 /* ContentView.swift */,
 				A1ADD630284324A80039B697 /* Assets.xcassets */,
@@ -207,6 +218,7 @@
 			files = (
 				A1ADD62F284324A60039B697 /* ContentView.swift in Sources */,
 				A1ADD62D284324A60039B697 /* ExampleApp.swift in Sources */,
+				A18E00D2284386BF0070FB66 /* CalendarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
